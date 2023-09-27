@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <style>
+      body {
+        background-image: url(./img/background_image.jpg);
+      }
+      .container {
+        text-align: center;
+        background-color: rgba(32, 32, 32, 0.349);
+        color: white;
+        margin: 10px;
+      }
+      .header span {
+        color: red;
+      }
+      .header {
+        font-variant: small-caps;
+        font-style: italic;
+        
+      }
+      #survey-form {
+        max-width: 300px;
+        margin: 0 auto;
+        text-align: left;
+        background: rgba(0, 0, 0, 0.753);
+        padding: 10px 40px;
+        padding-left: 20px;
+      }
+      label {
+        display: block;
+        margin: 10px 0px;
+      }
+      input[type="text"],
+      input[type="number"],
+      input[type="email"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+      }
+      input[type="checkbox"],
+      input[type="radio"] {
+        margin: 0px;
+      }
+
+      /* #type {
+        margin: 30px 0px;
+      }
+      #gender{
+        margin-bottom: 30px;
+      } */
+      #gender,#type{
+        margin: 20px 0px;
+      }
+
+      button {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        border-radius: 30px;
+        color: white;
+        background-color: red;
+        font-size: 15px;
+        border: transparent;
+        margin-top: 10px;
+        padding: 10px 35px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>NET<span>FLIX</span></h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <p></p>
+      </div>
+      <form id="survey-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your name" />
+
+        <label for="age">Age</label>
+        <input type="number" id="age" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" />
+
+        <label for="content-type">Content Type</label>
+        <select name="content-type" id="content-type">
+          <option value="War">War</option>
+          <option value="Action">Action</option>
+          <option value="Mystery">Mystery</option>
+          <option value="Horror">Horror</option>
+        </select>
+        <div id="type">
+          <label>Movie Type</label>
+          <label>
+            <input type="checkbox" value="Horror" name="movie-type" /> Comedy
+          </label>
+          <label>
+            <input type="checkbox" value="Horror" name="movie-type" /> Action
+          </label>
+          <label>
+            <input type="checkbox" value="Horror" name="movie-type" /> Romance
+          </label>
+        </div>
+        <div id="gender">
+          <label for="">Gender</label>
+          <label>
+            <input type="radio" name="gender" value="male" /> Male
+          </label>
+          <label>
+            <input type="radio" name="gender" value="female" /> Female
+          </label>
+          <label>
+            <input type="radio" name="gender" value="other" /> Other
+          </label>
+        </div>
+
+        <label for="feedback">Feedback</label>
+        <textarea id="feedback" rows="4" placeholder="Your feedback"></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
