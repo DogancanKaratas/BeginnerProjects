@@ -1,0 +1,60 @@
+body,
+html {
+  background: #cb6363;
+  height: 100%;
+  font-family: "Times New Roman", Georgia, serif;
+}
+::placeholder {
+  color: #fff !important;
+}
+.container {
+  max-width: 400px;
+}
+input[type="text"],
+input[type="text"]:focus {
+  color: #fff;
+  border: none;
+  background: rgba(0, 0, 0, 0.2);
+}
+.todos li {
+  background: #d87e7e;
+  border: none;
+  margin: 5px;
+  color: white;
+}
+.delete {
+  cursor: pointer;
+}
+.filtered {
+  display: none !important;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  background-size: cover;
+  background-position: center;
+}
+.todoapp span {
+  color: red;
+}
+.sp2 {
+  color: white;
+  font-size: 25px;
+}
+.sp3 {
+  color: red;
+}
+.clock{
+  text-align: center;
+  font-size: 40px;
+  color: rgb(36, 63, 41);
+  margin:250px auto;
+  
+  
+}
+.clock span{
+  padding: 25px;
+  
+}
